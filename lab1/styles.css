@@ -1,0 +1,136 @@
+/* ===== GENERAL ===== */
+body{
+    background-color: #0f172a;   /* dark slate blue */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #e5e7eb;              /* light text */
+}
+
+/* ===== HEADER ===== */
+#headerContainer{
+    background-color: #020617;   /* very dark header */
+    padding: 16px;
+}
+
+h1{
+    text-align: center;
+    color: #f9fafb;              /* very light text */
+    margin: 0;
+}
+
+/* ===== NAVIGATION ===== */
+#tabsContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #020617;   /* matches header */
+    padding: 12px 0;
+}
+
+.tabContainer{
+    margin: 0 8px;
+    background-color: #1e293b;   /* dark blue-gray */
+    border-radius: 6px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tabContainer:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+/* links */
+a{
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px 18px;
+}
+
+/* hover pseudo-class */
+a:hover{
+    text-decoration: underline;
+}
+
+/* active/current page */
+a.active{
+    background-color: #334155;   /* lighter than nav, not white */
+    color: #f9fafb;
+    border-radius: 6px;
+}
+
+/* ===== HOME (TEAM FLEXBOX) ===== */
+#teamContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    border-radius: 14px;
+    border: 3px solid #475569;
+    object-fit: cover;
+    background-color: #1e293b;   /* dark image backing */
+}
+
+figcaption{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e5e7eb;
+}
+
+/* ===== WELCOME MESSAGE ===== */
+#welcomeMessage{
+    text-align: center;
+    font-size: 1.1em;
+    margin: 30px;
+    color: #e5e7eb;
+}
+
+/* ===== ABOUT TABLE ===== */
+#tableContainer{
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #1e293b;
+}
+
+#tableContainer th,
+#tableContainer td{
+    border: 2px solid #475569;
+    padding: 12px 22px;
+    color: #e5e7eb;
+}
+
+/* ===== CONTACT FORM ===== */
+iframe{
+    display: block;
+    width: 75%;
+    height: 500px;
+    margin: 30px auto;
+    border: 2px solid #475569;
+    background-color: #1e293b;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align: center;
+    font-size: 0.85em;
+    color: #cbd5f5;              /* slightly dimmer text */
+    background-color: #020617;
+    padding: 18px 10px;
+    margin-top: 45px;
+}
+
+footer img{
+    margin-top: 12px;
+}
