@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: lightgray;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.panel {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 14px;
+  max-width: 900px;
+  margin: 12px auto;
+}
+
+.table {
+  max-width: 900px;
+  margin: 12px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.hand {
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  width: 100px;
+  margin-right: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+button:hover { background: gainsboro; }
+
+button:disabled {
+  background: lightgray;
+  cursor: not-allowed;
+}
+
+.cardsText {
+  min-height: 40px;
+  padding: 10px;
+  border: 1px dashed gray;
+  border-radius: 10px;
+  background: whitesmoke;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.neutral { background: whitesmoke; }
+
+.win {
+  background: lightgreen;
+  border-color: green;
+}
+
+.lose {
+  background: lightcoral;
+  border-color: red;
+}
+
+.push {
+  background: khaki;
+  border-color: goldenrod;
+}
+
+#statusImg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .table { grid-template-columns: 1fr; }
+}
