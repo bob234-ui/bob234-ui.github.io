@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black jack</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+
+  <h1>Blackjack</h1>
+
+  <div class="panel">
+    <label for="betInput">Bet:</label>
+    <input id="betInput" type="number" min="1" value="10" />
+
+    <button id="newBtn" type="button">New Game</button>
+    <button id="hitBtn" type="button" disabled>Hit</button>
+    <button id="standBtn" type="button" disabled>Stand</button>
+
+    <p id="bankText">Bank: 100</p>
+    <p id="betText">Current Bet: 0</p>
+  </div>
+
+  <div class="table">
+    <div class="hand">
+      <h2>Dealer</h2>
+      <div id="dealerCards" class="cardsText"></div>
+      <p id="dealerValue">Value: 0</p>
+    </div>
+
+    <div class="hand">
+      <h2>You</h2>
+      <div id="playerCards" class="cardsText"></div>
+      <p id="playerValue">Value: 0</p>
+    </div>
+  </div>
+
+  <div class="panel">
+    <p id="status" class="status neutral">Enter a bet and click New Game.</p>
+
+    <img id="statusImg"
+         src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+         alt="Game result icon">
+  </div>
+
 </body>
 </html>
