@@ -9,7 +9,6 @@ h1 {
     text-align: center;
 }
 
-/* Question cards */
 .questionBlock {
     background: white;
     padding: 15px;
@@ -19,7 +18,6 @@ h1 {
     max-width: 700px;
 }
 
-/* Question titles with aligned icons */
 #q1title,
 #q2title,
 #q3title,
@@ -35,7 +33,6 @@ h1 {
     background: whitesmoke;
 }
 
-/* Correct / Incorrect states */
 .correct {
     background: lightgreen;
     border-color: green;
@@ -46,19 +43,18 @@ h1 {
     border-color: red;
 }
 
-/* Radio labels */
 #q1ChoicesDiv label {
     display: inline-block;
     margin-right: 10px;
 }
 
-/* Checkbox labels */
+
 .checkboxGroup label {
     display: inline-block;
     margin-right: 10px;
 }
 
-/* Inputs */
+
 input, select {
     padding: 6px;
     margin-top: 6px;
@@ -66,7 +62,7 @@ input, select {
     border-radius: 4px;
 }
 
-/* Button */
+
 #submitBtn {
     display: block;
     margin: 20px auto;
@@ -82,7 +78,7 @@ input, select {
     background: darkblue;
 }
 
-/* Score + messages */
+
 #scoreNumber,
 #attempts,
 #congrats {
@@ -95,7 +91,7 @@ input, select {
     font-weight: bold;
 }
 
-/* Image size */
+
 img {
     width: 20px;
     height: 20px;

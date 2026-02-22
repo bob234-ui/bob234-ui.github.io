@@ -18,9 +18,9 @@ function setFeedback(titleId, feedbackId, imgId, state, message) {
     feedback.textContent = message;
 
     if (state === "correct") {
-        img.src = "img/check.jpg";
+        img.src = "img/checks.jpg";
     } else {
-        img.src = "img/x.png";
+        img.src = "img/x's.png";
     }
 }
 
