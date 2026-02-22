@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geography Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<h1>Geography Quiz</h1>
+
+<div class="questionBlock">
+
+    <p id="q1title">
+        <span>1. What is the capital of France?</span>
+        <img id="q1Img"
+             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+             alt="Q1 result">
+    </p>
+
+    <div id="q1ChoicesDiv"></div>
+    <p id="q1Feedback"></p>
+</div>
+
+
+<div class="questionBlock">
+
+    <p id="q2title">
+        <span>2. In which continent is Nigeria? (lowercase)</span>
+        <img id="q2Img"
+             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+             alt="Q2 result">
+    </p>
+
+    <input type="text" id="q2">
+    <p id="q2Feedback"></p>
+</div>
+
+
+<div class="questionBlock">
+
+    <p id="q3title">
+        <span>3. Where is CSUMB located?</span>
+        <img id="q3Img"
+             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+             alt="Q3 result">
+    </p>
+
+    <select id="selectInput">
+        <option>Texas</option>
+        <option>Washington</option>
+        <option>California</option>
+        <option>Iowa</option>
+    </select>
+
+    <p id="q3Feedback"></p>
+</div>
+
+
+<div class="questionBlock">
+
+    <p id="q4title">
+        <span>4. How many states are in the USA?</span>
+        <img id="q4Img"
+             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+             alt="Q4 result">
+    </p>
+
+    <input type="number" id="numberInput">
+    <p id="q4Feedback"></p>
+</div>
+
+
+<div class="questionBlock">
+
+    <p id="q5title">
+        <span>5. Where is the Arctic?</span>
+        <img id="q5Img"
+             src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+             alt="Q5 result">
+    </p>
+
+    <div class="checkboxGroup">
+        <label><input type="checkbox" id="checkWest"> West</label>
+        <label><input type="checkbox" id="checkNorth"> North</label>
+        <label><input type="checkbox" id="checkSouth"> South</label>
+        <label><input type="checkbox" id="checkEast"> East</label>
+    </div>
+
+    <p id="q5Feedback"></p>
+</div>
+
+
+<button id="submitBtn">Submit Quiz</button>
+
+<p id="scoreNumber">Score: 0</p>
+<p id="attempts">Total Times quiz taken: 0</p>
+<p id="congrats"></p>
+
+</body>
+</html>
