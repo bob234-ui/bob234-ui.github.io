@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+fieldset {
+  width: 650px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+legend {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input, select {
+  padding: 7px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  width: 250px;
+}
+
+input:focus, select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37,99,235,0.3);
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+#zipStatus,
+#usernameStatus,
+#matchStatus,
+#suggestedPassword {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+#suggestedPassword {
+  background-color: #eef2ff;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+
+#formStatus {
+  margin-top: 10px;
+  font-weight: bold;
+}
